@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 // put function declarations here:
-int myFunction(int, int);
+int add(int, int);
 
 void setup()
 {
@@ -11,7 +11,7 @@ void setup()
   {
     ; // wait for serial port to connect. Needed for native USB
   }
-  int result = myFunction(2, 3);
+  int result = add(2, 3);
   Serial.println("Result: " + String(result));
 }
 
@@ -21,7 +21,7 @@ void loop()
 }
 
 // put function definitions here:
-int myFunction(int x, int y)
+int add(int x, int y)
 {
   return x + y;
 }
